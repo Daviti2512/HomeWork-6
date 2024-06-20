@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Add a Book</h1>
+    <form id="bookForm">
+        <label for="title">წიგნის სათაური:</label>
+        <input type="text" id="title" name="title" required>
+        <span id="titleError" class="error"></span><br><br>
+
+        <label for="pages">გვერდების რაოდენობა:</label>
+        <input type="text" id="pages" name="pages" required readonly>
+        <span id="pagesError" class="error"></span><br><br>
+        
+        <label for="author">ავტორი:</label>
+        <input type="text" id="author" name="author" required readonly>
+        <span id="authorError" class="error"></span><br><br>
+        
+        <label for="price">ფასი:</label>
+        <input type="text" id="price" name="price" required>
+        <span id="priceError" class="error"></span><br><br>
+        
+        <label for="copies">ტირაჟი:</label>
+        <input type="text" id="copies" name="copies" required readonly>
+        <span id="copiesError" class="error"></span><br><br>
+        
+        <input type="submit" value="Add Book">
+    </form>
+
+
+    <script src="main.js" defer></script>
+</body>
+</html>
